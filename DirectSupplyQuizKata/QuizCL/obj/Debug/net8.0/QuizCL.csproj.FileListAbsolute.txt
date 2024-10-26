@@ -1,0 +1,14 @@
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\bin\Debug\net8.0\QuizCL.exe
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\bin\Debug\net8.0\QuizCL.deps.json
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\bin\Debug\net8.0\QuizCL.runtimeconfig.json
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\bin\Debug\net8.0\QuizCL.dll
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\bin\Debug\net8.0\QuizCL.pdb
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.AssemblyInfoInputs.cache
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.AssemblyInfo.cs
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.csproj.CoreCompileInputs.cache
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.dll
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\refint\QuizCL.dll
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.pdb
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.genruntimeconfig.cache
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\ref\QuizCL.dll
