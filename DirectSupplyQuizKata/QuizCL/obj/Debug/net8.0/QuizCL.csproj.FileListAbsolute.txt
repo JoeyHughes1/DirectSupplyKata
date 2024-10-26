@@ -12,3 +12,4 @@ C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj
 C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.pdb
 C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.genruntimeconfig.cache
 C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\ref\QuizCL.dll
+C:\Users\april\Documents\GitHub\DirectSupplyKata\DirectSupplyQuizKata\QuizCL\obj\Debug\net8.0\QuizCL.sourcelink.json
