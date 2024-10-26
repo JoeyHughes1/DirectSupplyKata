@@ -38,7 +38,7 @@ public class Question
 	/// If any of the parameters are null or have empty strings,
 	/// the ArgumentNullException is thrown.
 	/// </exception>
-	public Question(string newPrompt, string correctAnswer, params string[] incorrectAnswers)
+	public Question(string newPrompt, string correctAnswer, params string?[] incorrectAnswers)
 	{
 		// Check the provided arguments for being null (or empty string)
 		if (String.IsNullOrEmpty(newPrompt) || String.IsNullOrEmpty(correctAnswer) 
@@ -46,7 +46,7 @@ public class Question
 			throw new ArgumentNullException("All arguments must be non-null and non-empty.");
 
 		// Make sure all the incorrect answers are valid strings
-		foreach (string answer in incorrectAnswers)
+		foreach (string? answer in incorrectAnswers)
 		{
 			if (String.IsNullOrEmpty(answer))
 				throw new ArgumentNullException("Incorrect answers must be non-null and non-empty.");

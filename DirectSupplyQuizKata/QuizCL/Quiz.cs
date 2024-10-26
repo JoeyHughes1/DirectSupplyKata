@@ -46,13 +46,14 @@ public class Quiz
 
 
 
-	/// <summary>
-	/// Creates a new Question object and adds it to this Quiz.
-	/// </summary>
-	/// <param name="prompt">The prompt to give the question.</param>
-	/// <param name="correctAnswer">The correct answer to give to the question.</param>
-	/// <param name="incorrectAnswers">The list of incorrect answers to give to the question.</param>
-	public void AddQuestion(string prompt, string correctAnswer, params string[] incorrectAnswers)
+    /// <summary>
+    /// Creates a new Question object and adds it to this Quiz.
+    /// </summary>
+    /// <param name="prompt">The prompt to give the question.</param>
+    /// <param name="correctAnswer">The correct answer to give to the question.</param>
+    /// <param name="incorrectAnswers">The list of incorrect answers to give to the question.</param>
+    /// <exception cref="ArgumentNullException">If any of the parameters are null or have empty strings.</exception>
+    public void AddQuestion(string prompt, string correctAnswer, params string?[] incorrectAnswers)
 	{
         Questions.Add(new Question(prompt, correctAnswer, incorrectAnswers));
 	}

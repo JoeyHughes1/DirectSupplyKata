@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79F03FF3-5E8B-4484-9ACC-6BB3AED5934D}|QuizCL\\QuizCL.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\directsupplyquizkata\\quizcl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79F03FF3-5E8B-4484-9ACC-6BB3AED5934D}|QuizCL\\QuizCL.csproj|solutionrelative:quizcl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79F03FF3-5E8B-4484-9ACC-6BB3AED5934D}|QuizCL\\QuizCL.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\directsupplyquizkata\\quizcl\\quizcli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79F03FF3-5E8B-4484-9ACC-6BB3AED5934D}|QuizCL\\QuizCL.csproj|solutionrelative:quizcl\\quizcli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F03FF3-5E8B-4484-9ACC-6BB3AED5934D}|QuizCL\\QuizCL.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\directsupplyquizkata\\quizcl\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79F03FF3-5E8B-4484-9ACC-6BB3AED5934D}|QuizCL\\QuizCL.csproj|solutionrelative:quizcl\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79F03FF3-5E8B-4484-9ACC-6BB3AED5934D}|QuizCL\\QuizCL.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\directsupplyquizkata\\quizcl\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,17 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Quiz.cs",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\QuizCL\\Quiz.cs",
+              "RelativeDocumentMoniker": "QuizCL\\Quiz.cs",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\QuizCL\\Quiz.cs",
+              "RelativeToolTip": "QuizCL\\Quiz.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwDcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T19:45:13.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\QuizCL\\Question.cs",
               "RelativeDocumentMoniker": "QuizCL\\Question.cs",
               "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\QuizCL\\Question.cs",
               "RelativeToolTip": "QuizCL\\Question.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwCgAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T19:00:47.7Z",
               "EditorCaption": ""
@@ -36,12 +53,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\QuizCL\\Program.cs",
-              "RelativeDocumentMoniker": "QuizCL\\Program.cs",
-              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\QuizCL\\Program.cs",
-              "RelativeToolTip": "QuizCL\\Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAIwDgAAABTAAAAAAAAAA==",
+              "Title": "QuizCLI.cs",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\QuizCL\\QuizCLI.cs",
+              "RelativeDocumentMoniker": "QuizCL\\QuizCLI.cs",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\DirectSupplyQuizKata\\QuizCL\\QuizCLI.cs",
+              "RelativeToolTip": "QuizCL\\QuizCLI.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAIwF0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T02:47:42.251Z",
               "EditorCaption": ""
