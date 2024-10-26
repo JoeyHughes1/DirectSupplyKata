@@ -1,10 +1,11 @@
 ﻿using System;
 using System.IO;
+using System.Xml.Linq;
 
 /// <summary>
-/// Not too sure yet.
+/// Runs a command line interface for the Quiz program.
 /// </summary>
-internal class Program
+internal class QuizCLI
 {
 
     /// <summary>
@@ -15,6 +16,8 @@ internal class Program
         Console.Write("Write the number of your choice: ");
     }
 
+
+
     /// <summary>
     /// Prints out the Question prompt, and its answer choices in a random order.
     /// Returns the array of the answer choices.
@@ -24,7 +27,7 @@ internal class Program
     private static string[] PrintQuestion(Question q)
     {
         // Write the prompt out with an extra newline
-        Console.WriteLine($"{q.Prompt}:\n");
+        Console.WriteLine($"---\n{q.Prompt}:\n");
 
         // Get a random sequence of choices.
         string[] choices = q.getAnswerChoices();
@@ -46,54 +49,77 @@ internal class Program
     /// </summary>
     private static void Main()
     {
-        Console.WriteLine("Hello, World!");
-        
-        // Create a test question
-        Question q1 = new Question("What is the capital of the United States?", "Washington, DC", "Charlotte, NC", "Salt Lake City, UT");
+        Console.WriteLine("Welcome to the Quiz.");
+
+        // Create a Quiz
+        Quiz quiz = new Quiz("Minecraft", "The ultimat minecraft quiz! EP1C STYL3!!");
+        quiz.AddQuestion("What is the fastest material for pickaxes?", "Gold", "Wood", "Diamond", "Netherite", "Iron");
+        quiz.AddQuestion("Who is the creepy man with white eyes that looks like Steve?", "Herobrine", "Not so good feeling maker man", "DanTDM", "Jeff");
+        quiz.AddQuestion("What is the final boss's name?", "The Ender Dragon", "The Shulker", "The Evoker");
 
 
-        // Print the question and get a hold of the choices
-        string[] choices = PrintQuestion(q1);
+        // Get the questions from the Quiz
+        List<Question> list = quiz.Questions;
+        int numCorrect = 0;
 
-        // Check if the answer they gave was correct
-        bool tryAgain = true;
-        while (tryAgain)
+        // Print the information about the Quiz
+        Console.WriteLine($"-----\nCategory: {quiz.Category}\nTitle: {quiz.Title}\n");
+
+        // Ask each question
+        foreach (Question question in list)
         {
-            // Read an answer from the user.
-            PrintPromptForAnswer();
-            string? answer = Console.ReadLine();
+            // Print the question and get a hold of the choices
+            string[] choices = PrintQuestion(question);
 
-
-            // If the answer read was null, something went wrong
-            if (answer == null)
+            // Keep reading until they enter a valid answer choice.
+            bool tryAgain = true;
+            while (tryAgain)
             {
-                Console.WriteLine("Your answer could not be read. Exiting.");
-                return;
-            }
+                // Read an answer from the user.
+                PrintPromptForAnswer();
+                string? answer = Console.ReadLine();
 
-
-            // Try to convert the answer to a number and check their choice
-            try
-            {
-                // Check their answer against the correct answer
-                if (q1.IsCorrect(choices[Convert.ToInt32(answer)]))
+                // If the answer read was null, something went wrong
+                if (answer == null)
                 {
-                    // If their answer was correct, print correct
-                    Console.WriteLine("Correct!");
-                } else
-                {
-                    // If their answer was incorrect, print false
-                    Console.WriteLine("Incorrect.");
+                    Console.WriteLine("Your answer could not be read. Exiting.");
+                    return;
                 }
-                tryAgain = false;
+
+                // Try to convert the answer to a number and check their choice
+                try
+                {
+                    // Check their answer against the correct answer
+                    if (question.IsCorrect(choices[Convert.ToInt32(answer)]))
+                    {
+                        // If their answer was correct, print correct
+                        Console.WriteLine("\nCorrect!");
+                        numCorrect++;
+                    }
+                    else
+                    {
+                        // If their answer was incorrect, print false
+                        Console.WriteLine("\nIncorrect.");
+                    }
+
+                    // Since we successfully got an answer, we are done reading.
+                    tryAgain = false;
+                }
+                catch (Exception ex)
+                {
+                    // If their answer was not the right format or out of range, try again
+                    Console.WriteLine("Please enter the number of one of the answer choices.");
+                }
             }
-            catch (Exception ex)
-            {
-                // If their answer was not the right format or out of range, try again
-                Console.WriteLine("Please enter the number of one of the answer choices.");
-            }
+
+            // After they have given their answer, print another newline, then go to the next.
+            Console.WriteLine();
         }
 
+        // After the quiz, display the results
+        float percentScore = 100 * ((float)numCorrect) / quiz.NumQuestions;
+        Console.WriteLine($"Your score is: \n\n({numCorrect} / {quiz.NumQuestions}) = {percentScore:0.00}%");
+        Console.WriteLine("Thank you for taking the quiz!");
         
     }
 }
