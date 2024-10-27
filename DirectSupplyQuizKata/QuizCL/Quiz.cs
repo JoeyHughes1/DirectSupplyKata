@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 /// <summary>
 /// The Quiz object holds a list of Questions, a category, and a title.
 /// The category and title can only be changed by going through the QuizManager.
@@ -12,22 +13,33 @@ public class Quiz
 	public List<Question> Questions {  get; private set; }
 
 	/// <summary>
-	/// Property of the amount of questions in this quiz. Read-only.
-	/// </summary>
-	public int NumQuestions
-	{
-		get => Questions.Count;
-	}
-
-	/// <summary>
 	/// The Category of the Quiz. 
 	/// </summary>
-	public string Category { get; internal set; }
+	public string Category { get; private set; }
 
 	/// <summary>
 	/// The Title of this Quiz.
 	/// </summary>
-	public string Title { get; internal set; }
+	public string Title { get; private set; }
+
+	/// <summary>
+	/// The underlying integer time value for the TimeLimit property.
+	/// </summary>
+	private int timeLimit;
+
+	/// <summary>
+	/// The time limit in seconds for this Quiz.
+	/// </summary>
+	public int TimeLimit 
+	{
+		get => timeLimit;
+		private protected set
+		{
+            if (value <= 0)
+                throw new ArgumentOutOfRangeException("Time limit must be a positive integer");
+			timeLimit = value;
+        }
+	}
 
 
 
@@ -37,10 +49,15 @@ public class Quiz
 	/// </summary>
 	/// <param name="category">The name of the category of this Quiz</param>
 	/// <param name="title">The title of this quiz.</param>
-	public Quiz(string category, string title)
+	public Quiz(string category, string title, int timeLimit)
 	{
+		// Check for null or empty category or title.
+		if(String.IsNullOrEmpty(category) || String.IsNullOrEmpty(title))
+			throw new ArgumentNullException("The category and title must both be non-null and non-empty");
+
 		Category = category;
 		Title = title;
+		TimeLimit = timeLimit;
         Questions = [];
 	}
 

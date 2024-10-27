@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 /// <summary>
 /// The Question class represents a question that will be answered within a Quiz. 
 /// Each Question will have a prompt, and answer choices. There will always be
@@ -23,7 +24,7 @@ public class Question
 	/// <summary>
 	/// The array of incorrect answers to the prompt. Could be empty.
 	/// </summary>
-	private readonly string[] IncorrectAnswers;
+	public string[] IncorrectAnswers {  get; private set; }
 
 
 
@@ -59,45 +60,5 @@ public class Question
 		// Do a shallow array copy from the parameter into the private field in this class.
 		IncorrectAnswers = (string[]) incorrectAnswers.Clone();
 	}
-
-
-
-    /// <summary>
-    /// Gets an array of all of the answer choices in a random order.
-    /// The correct answer will be randomly mixed with the incorrect answers.
-    /// </summary>
-    /// <returns>The string array of the answer choice list.</returns>
-    public string[] getAnswerChoices()
-	{
-        // Create an array to hold all of the answers, including the correct one.
-        string[] allAnswers = new string[IncorrectAnswers.Length + 1];
-
-        // Copy the incorrect answers into the array, and add the correct answer at the end.
-        Array.Copy(IncorrectAnswers, allAnswers, IncorrectAnswers.Length);
-        allAnswers[allAnswers.Length - 1] = CorrectAnswer;
-
-        // Shuffle the order of the answers in the array
-        Random random = new Random();
-        for (int i = allAnswers.Length - 1; i > 0; i--)
-        {
-            int j = random.Next(i + 1);
-            string temp = allAnswers[i];
-            allAnswers[i] = allAnswers[j];
-            allAnswers[j] = temp;
-        }
-
-        // Return out shuffled array of all the answers
-        return allAnswers;
-    }
-
-
-
-	/// <summary>
-	/// Returns whether the given string is the same string as the
-	/// correct answer for this question. Case-insensitive.
-	/// </summary>
-	/// <param name="maybeCorrect">The answer choice to be checked against the correct answer.</param>
-	/// <returns>True if the given string was the correct answer for this Question.</returns>
-	public bool IsCorrect(string maybeCorrect) => ( !String.IsNullOrEmpty(maybeCorrect) && maybeCorrect.ToLower().Equals(CorrectAnswer.ToLower()) );
 
 }

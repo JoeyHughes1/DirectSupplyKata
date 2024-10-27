@@ -42,3 +42,30 @@ I'm writing the Question code and making a quick interface to test it on the com
 I think I will have Quizzes have their categories and titles as normal, but they are set to internal so that QuizManager is the only one really editing their values. I think QuizManager will have a private class of CategoryList, which represents a category and has all the quizzes for that category in there. So, when requesting a quiz the code will have to provide both a category and a title, so the quiz manager knows which list to look for the quiz in.
 
 Next up is the Random Quiz. That will let me test more thoroughly since I won't have to make a bunch of quizzes myself. This will be fun. I think it's just a class that extends a quiz and has a method to randomize its list of Questions using the Open Trivia DB API.
+
+Maybe I should move the shuffling of the answer choices of the Quiz to a static method or something. Now that I'm thinking about it, maybe it should be the client's responsibility to take the correct and incorrect choices and shuffle them up. That's kind of what the trivia db does already. So maybe the command line interface would just request from the QuizManager a Quiz, and it would get a JSON much like the one that the trivia db gives, and it would be the client's responsibility to shuffle the answers and know which one is right and calculate their score and all that. The Quiz Manager would just be for distributing the information about the Quizzes.
+This makes more sense, that feels more like an API that could work with a frontend.
+So the things that the client would need was a list of all the categories and all the quizzes in each category. Then, using the category and quiz name, it would request a quiz, and then the manager would give them a json esque struct or record, and it's the client's responsiblity to give the quiz and all that.
+So that's two or three functions of the Quiz Manager. It gets more complicated with changing the Quizzes. Adding a whole new quiz wouldn't be bad, you just pass into the manager a json-esque object with all the details about the quiz and a list with details about each question.
+Editing an existing quiz would be more complicated. Maybe it would be best to just have the manager give out the information like it does before, then the client can edit the information it wants to edit, then tell the quiz manager hey, here's this quiz, I want you to delete this other quiz and add this one in. That would essentially be editing the Quiz. Maybe not the most efficient, that's a lot of data passing around, but it would work. I could see the manager implementation of that literally being find this quiz, delete it, now add a new quiz with this information. That would make it easy to change categories or titles or anything. Also, that essentially is just saying that Quizzes are immutable, and editing involves deleting the old one and making a whole new one. Hm. That works, though.
+Another option would be having an option you give to the manager like "I want to change the (0:title, 1:category, 2:a question, etc.)", and then the manager will do the change and be like cool, done now. That would be less data passing around, but I feel like that'd be more complicated. I think I'll try the immutable Quizzes first.
+They aren't strictly immutable, since the Random Quizzes are actually just changing the questions that it has, but in terms of interacting with the client, from their perspective they would be immutable and they are just deleting the old and replacing with the new.
+
+So what are all the functions then?:
+- (private) Given a category name and a quiz title, find a Quiz object.
+    -Turns out, by setting it up with dictionaries, this became one line: 
+        - MapCategoryLists[category].Quizzes[title]
+- Return a list of categories, maybe how many quizzes are in each one
+- Return a list of the quizzes in a certain category
+- Return all the information about a Quiz.
+- Create a Quiz given a record of information about it.
+    - but no duplicate quizzes, if there already is one with the same category and title then bad
+- Delete a Quiz given the category and title
+- "Edit" a Quiz given a record of information about it.
+    - This would just be finding the old Quiz, deleting it, then creating a new quiz with the info
+
+
+Next up and last up is the QuizManager. I think what I've landed on is it holds all of the quizzez in a private class that is a Category and has a list of Quizzes that are in that category. (When I get to file I/O I will probably have each CategoryList be in charge of Outputting their quizzes). So the QuizManager has a list of the CategoryLists. 
+It should be able to:
+- output the list of Category names and all the quizzes in each one. Something like a list of structs with a string for their category name and a list with the Quiz names.
+- Given a category and a Quiz name, grab a 

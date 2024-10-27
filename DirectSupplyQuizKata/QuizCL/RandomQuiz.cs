@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Net.Http.Json;
 using System.Text;
+using System.Web;
+
 
 /// <summary>
 /// The RandomQuiz class extends the Quiz class, adding the functionality to grab Questions from the 
@@ -138,7 +140,7 @@ public class RandomQuiz : Quiz
     /// </summary>
     /// <param name="category">The category of the quiz. Must be one of the OpenTriviaDB categories.</param>
     /// <exception cref="ArgumentException">If the given category is not one of the Open Trivia DB Categories.</exception>
-    public RandomQuiz(string category) : base(ValidateCategory(category), "Random Quiz")
+    public RandomQuiz(string category) : base(ValidateCategory(category), "Random Quiz", 1)
 	{
 	}
 
@@ -150,7 +152,7 @@ public class RandomQuiz : Quiz
 	/// It then adds those questions to this Quiz's Question list.
 	/// </summary>
 	/// <param name="numQuestions">The number of questions to get. Default 10.</param>
-	/// <param name="difficulty">The difficulty of the questions. Defaults to Difficulty.Any. </param>
+	/// <param name="difficulty">The difficulty of the questions. Defaults to Difficulty.Any </param>
 	/// <exception cref="ArgumentOutOfRangeException">If the number of questions is negative or above 100.</exception>
 	public async Task RandomizeQuestions(int numQuestions = 10, Difficulty difficulty = Difficulty.Any)
 	{
@@ -166,9 +168,7 @@ public class RandomQuiz : Quiz
 		urlBuilder.Append($"{numQuestions}&category=");
 
 		// Add our category number
-		int categoryNumber;
-		OpenTriviaDB_CategoryToIDMap.TryGetValue(Category, out categoryNumber);
-		urlBuilder.Append($"{categoryNumber}");
+		urlBuilder.Append($"{OpenTriviaDB_CategoryToIDMap[Category]}");
 
 		// If we are giving a difficulty, add it
 		if(difficulty != Difficulty.Any)
@@ -234,10 +234,22 @@ public class RandomQuiz : Quiz
 			// Try creating adding the question to our list. If there was an error, write to console and continue
 			try
 			{
-				AddQuestion(question.question, question.correct_answer, [.. question.incorrect_answers]);
+				// Decode the HTML encodings in each answer
+				string?[] incorrectAnswers = [.. question.incorrect_answers];
+				for (int i = 0; i < incorrectAnswers.Length; i++)
+					incorrectAnswers[i] = HttpUtility.HtmlDecode(incorrectAnswers[i]);
+                
+				// Add a new Question to this Quiz with the given information, decoding all the HTML encodings.
+                AddQuestion(HttpUtility.HtmlDecode(question.question),
+                    HttpUtility.HtmlDecode(question.correct_answer), incorrectAnswers);
+
 			} catch (Exception ) { Console.WriteLine("We had a bad parameter in creating a Question object."); }
 		}
 
-		// We have added the questions we got to our list, we are done.
+		// We have added the questions we got to our list, now set a valid time limit
+		// according to the difficulty and number of questions. 
+		int mult = 3;
+		if (difficulty != Difficulty.Any) mult = 3 - (int)difficulty;
+        TimeLimit = numQuestions * 10 * mult;
     }
 }

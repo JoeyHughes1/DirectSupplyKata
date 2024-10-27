@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuizCL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e122db9e133e3080024b533b7317ee8e23acbf3b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44ee37d3c430e2e2bbe1818fb9ffc7e8fc0ffdeb")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuizCL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuizCL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
