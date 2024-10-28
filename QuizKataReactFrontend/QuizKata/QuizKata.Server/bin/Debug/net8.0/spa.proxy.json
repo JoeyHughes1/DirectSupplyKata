@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\..\\quizkata.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

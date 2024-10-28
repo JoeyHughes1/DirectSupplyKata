@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\reactfrontend\\quizkata\\quizkata.server\\quizsrc\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|solutionrelative:quizkata.server\\quizsrc\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\reactfrontend\\quizkata\\quizkata.server\\quizsrc\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|solutionrelative:quizkata.server\\quizsrc\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\reactfrontend\\quizkata\\quizkata.server\\controllers\\quizapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|solutionrelative:quizkata.server\\controllers\\quizapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959DC362-8DD7-4E6A-99F5-5A15F24CF413}|quizkata.client\\quizkata.client.esproj|c:\\users\\april\\documents\\github\\directsupplykata\\reactfrontend\\quizkata\\quizkata.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{959DC362-8DD7-4E6A-99F5-5A15F24CF413}|quizkata.client\\quizkata.client.esproj|solutionrelative:quizkata.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\reactfrontend\\quizkata\\quizkata.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|solutionrelative:quizkata.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\reactfrontend\\quizkata\\quizkata.server\\quizsrc\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|solutionrelative:quizkata.server\\quizsrc\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|c:\\users\\april\\documents\\github\\directsupplykata\\reactfrontend\\quizkata\\quizkata.server\\quizsrc\\randomquiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F15D3373-99A0-4B04-8B4F-A0ABDECF01F1}|QuizKata.Server\\QuizKata.Server.csproj|solutionrelative:quizkata.server\\quizsrc\\randomquiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959DC362-8DD7-4E6A-99F5-5A15F24CF413}|quizkata.client\\quizkata.client.esproj|c:\\users\\april\\documents\\github\\directsupplykata\\reactfrontend\\quizkata\\quizkata.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{959DC362-8DD7-4E6A-99F5-5A15F24CF413}|quizkata.client\\quizkata.client.esproj|solutionrelative:quizkata.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuizManager.cs",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\QuizSrc\\QuizManager.cs",
+              "RelativeDocumentMoniker": "QuizKata.Server\\QuizSrc\\QuizManager.cs",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\QuizSrc\\QuizManager.cs",
+              "RelativeToolTip": "QuizKata.Server\\QuizSrc\\QuizManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T00:50:44.216Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuizAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\Controllers\\QuizAPIController.cs",
+              "RelativeDocumentMoniker": "QuizKata.Server\\Controllers\\QuizAPIController.cs",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\Controllers\\QuizAPIController.cs",
+              "RelativeToolTip": "QuizKata.Server\\Controllers\\QuizAPIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T00:52:28.769Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\quizkata.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "quizkata.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\quizkata.client\\src\\App.jsx",
+              "RelativeToolTip": "quizkata.client\\src\\App.jsx",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwHQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-10-27T23:27:59.271Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\Program.cs",
+              "RelativeDocumentMoniker": "QuizKata.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\Program.cs",
+              "RelativeToolTip": "QuizKata.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:52:22.4Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Quiz.cs",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\QuizSrc\\Quiz.cs",
+              "RelativeDocumentMoniker": "QuizKata.Server\\QuizSrc\\Quiz.cs",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\QuizSrc\\Quiz.cs",
+              "RelativeToolTip": "QuizKata.Server\\QuizSrc\\Quiz.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAzwF8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T00:51:04.758Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\QuizSrc\\Question.cs",
+              "RelativeDocumentMoniker": "QuizKata.Server\\QuizSrc\\Question.cs",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\QuizSrc\\Question.cs",
+              "RelativeToolTip": "QuizKata.Server\\QuizSrc\\Question.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAArwCQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T02:38:19.922Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RandomQuiz.cs",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\QuizSrc\\RandomQuiz.cs",
+              "RelativeDocumentMoniker": "QuizKata.Server\\QuizSrc\\RandomQuiz.cs",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\QuizKata.Server\\QuizSrc\\RandomQuiz.cs",
+              "RelativeToolTip": "QuizKata.Server\\QuizSrc\\RandomQuiz.cs",
+              "ViewState": "AgIAANIAAAAAAAAAAIAwwPEAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T04:03:08.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\quizkata.client\\vite.config.js",
+              "RelativeDocumentMoniker": "quizkata.client\\vite.config.js",
+              "ToolTip": "C:\\Users\\april\\Documents\\GitHub\\DirectSupplyKata\\ReactFrontend\\QuizKata\\quizkata.client\\vite.config.js",
+              "RelativeToolTip": "quizkata.client\\vite.config.js",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-28T01:14:08.788Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

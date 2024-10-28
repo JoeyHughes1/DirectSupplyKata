@@ -1,0 +1,1 @@
+C:\Users\april\Documents\GitHub\DirectSupplyKata\ReactFrontend\QuizKata\quizkata.client\obj\Debug\quizkata.client.esproj.CoreCompileInputs.cache
